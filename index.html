@@ -6,23 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PORTAL DE NOTÍCIAS GALÁTICO</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./src/components/CardNews.js" defer></script>
 </head>
 
 <body>
   <div class="container">
 
-    <div class="card">
-      <div class="card__left">
-        <span>By Helio Vallim</span>
-        <a href="#">Darth Vader Contrata Devs</a>
-        <p>Darth Vader procura desenvolvedores que saibam trabalhar com componentes.</p>
-      </div>
-      <div class="card__right">
-        <img src="./assets/img/darth-vader-sm.png" alt="Darth Vader" srcset="">
-      </div>
-    </div>
-
-  </div>
+  <card-news 
+    autor="Jhun"
+    title="Darth Vader contrata"
+    link-url="www.google.com"
+    content="Darth Vader procura desenvolvedores que saibam trabalhar com componentes."
+    photo="./assets/img/darth-vader-sm.png"
+    photo-alt="Darth Vader"
+  >
+</card-news>
+  <card-news 
+    title="Yoda convence República a utilizar componentes"
+    link-url="www.google.com/yoda"
+    content="Yoda se proununcia e choca a República ao pedir para que sejam usados Web Components"
+  >
+</card-news>
+ 
 </body>
 
 </html>
